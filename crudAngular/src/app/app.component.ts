@@ -12,6 +12,4 @@ export class AppComponent {
     {id: 3, nombre: 'Yung Lee', pais:'China'}
   ];
 
-
-
 }
