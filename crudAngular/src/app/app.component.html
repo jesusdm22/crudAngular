@@ -10,7 +10,8 @@
         <li
           *ngFor="let empleado of empleadosArray"
         class="list-group-item list-group-item-action">
-          {{empleado.nombre}}
+          <span class="badge badge-primary">{{empleado.id}}&nbsp;</span>
+          {{empleado.nombre}} - {{empleado.pais}}
         </li>
       </ul>
 
