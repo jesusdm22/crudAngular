@@ -19,7 +19,7 @@ empleadoSeleccionado: Empleado = new Empleado();
 //Funcion para agregar y editar empleado
 addOrEdit(){
 
-  if(this.empeladoSeleccionado.id == 0){
+  if(this.empleadoSeleccionado.id == 0){
     this.empleadoSeleccionado.id = this.empleadosArray.length + 1;
     this.empleadosArray.push(this.empleadoSeleccionado);
   }
@@ -29,7 +29,7 @@ addOrEdit(){
 
 //Funcion para pasar los datos al formulario y poder editar
 openForEdit(empleado: Empleado){
-this.empeladoSeleccionado = empleado;
+this.empleadoSeleccionado = empleado;
 }
 
 //Funcion para eliminar
