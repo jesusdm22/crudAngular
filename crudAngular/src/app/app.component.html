@@ -28,6 +28,7 @@
             <input type="text" [(ngModel)]="empleadoSeleccionado.pais" placeholder="Introduce tu país..." class="form-control">
           </div>
           <button (click)="addOrEdit()" class="btn btn-primary">Registrar empleado</button>
+          <span>&nbsp;&nbsp;</span>
           <button
           *ngIf="empleadoSeleccionado.id != 0"
           (click)="delete()"
@@ -38,6 +39,11 @@
     </div>
     <div class="col-md-4">
       <img width="300" alt="Logo" src="https://i.imgur.com/a2yJ3rw.png" draggable="false">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-center">Una producción de Cristian Cabrera & Jesús Díaz || &copy; 2019</p>
     </div>
   </div>
 </div>
