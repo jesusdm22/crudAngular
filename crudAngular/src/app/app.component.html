@@ -29,7 +29,7 @@
           </div>
           <button (click)="addOrEdit()" class="btn btn-primary">Registrar empleado</button>
           <button
-          *ngIf="empleadoSeleccionado.id !== 0"
+          *ngIf="empleadoSeleccionado.id != 0"
           (click)="delete()"
           class="btn btn-danger">Eliminar empleado
           </button>
