@@ -10,7 +10,7 @@
         <li
           *ngFor="let empleado of empleadosArray"
         class="list-group-item list-group-item-action"
-        (click)="openForEdit(employee)">
+        (click)="openForEdit(empleado)">
           <span class="badge badge-primary">{{empleado.id}}&nbsp;</span>
           {{empleado.nombre}} - {{empleado.pais}}
         </li>
