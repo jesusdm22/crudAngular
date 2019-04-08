@@ -13,6 +13,6 @@ export class AppComponent {
   ];
 
 //Empleado vacio
-empleadoSeleccionado: Empleado = new Empleado[];
+empleadoSeleccionado: Empleado = new Empleado();
 
 }
