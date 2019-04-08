@@ -12,4 +12,7 @@ export class AppComponent {
     {id: 3, nombre: 'Raul', pais:'República Democrática del Congo'}
   ];
 
+//Empleado vacio
+empleadoSeleccionado: Empleado = new Empleado();
+
 }
