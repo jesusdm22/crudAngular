@@ -28,6 +28,11 @@
             <input type="text" [(ngModel)]="empleadoSeleccionado.pais" placeholder="Introduce tu país..." class="form-control">
           </div>
           <button (click)="addOrEdit()" class="btn btn-primary">Registrar empleado</button>
+          <button
+          *ngIf="empleadoSeleccionado.id !== 0"
+          (click)="delete()"
+          class="btn btn-danger">Eliminar empleado
+          </button>
         </div>
       </div>
     </div>
