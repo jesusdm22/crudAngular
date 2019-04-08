@@ -15,9 +15,26 @@ export class AppComponent {
 //Empleado vacio
 empleadoSeleccionado: Empleado = new Empleado();
 
+
+//Funcion para agregar y editar empleado
 addOrEdit(){
-  this.empleadoSeleccionado.id = this.empleadosArray.length + 1;
-  this.empleadosArray.push(this.empleadoSeleccionado);
+
+  if(this.empeladoSeleccionado.id == 0){
+    this.empleadoSeleccionado.id = this.empleadosArray.length + 1;
+    this.empleadosArray.push(this.empleadoSeleccionado);
+  }
+
+  this.empleadoSeleccionado = new Empleado();
+}
+
+//Funcion para pasar los datos al formulario y poder editar
+openForEdit(empleado: Empleado){
+this.empeladoSeleccionado = empleado;
+}
+
+//Funcion para eliminar
+delete(){
+  this.empleadosArray = this.empleadosArray.filter(x => x != this.empleadoSeleccionado);
   this.empleadoSeleccionado = new Empleado();
 }
 
