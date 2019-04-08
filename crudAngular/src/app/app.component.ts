@@ -15,4 +15,10 @@ export class AppComponent {
 //Empleado vacio
 empleadoSeleccionado: Empleado = new Empleado();
 
+addOrEdit(){
+  this.empleadoSeleccionado.id = this.empleadosArray.length + 1;
+  this.empleadosArray.push(this.empleadoSeleccionado);
+  this.empleadoSeleccionado = new Empleado();
+}
+
 }
