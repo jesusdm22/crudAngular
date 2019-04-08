@@ -21,7 +21,10 @@
             Inserta un nuevo empleado
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Introduce tu nombre..." class="form-control">
+            <input type="text" [(ngModel)]="empleadoSeleccionado.nombre" placeholder="Introduce tu nombre..." class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" [(ngModel)]="empleadoSeleccionado.pais" placeholder="Introduce tu país..." class="form-control">
           </div>
         </div>
       </div>
@@ -30,5 +33,4 @@
       <img width="300" alt="Logo" src="https://i.imgur.com/a2yJ3rw.png">
     </div>
   </div>
-
 </div>
