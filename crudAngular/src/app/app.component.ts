@@ -6,7 +6,7 @@ import { Empleado } from './models/empleado';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  empleadosArray: empleado[] = [
+  empleadosArray: Empleado[] = [
     {id: 1, nombre: 'Jesus', pais:'España'},
     {id: 2, nombre: 'Cristian', pais:'Somalia'},
     {id: 3, nombre: 'Yung Lee', pais:'China'}
