@@ -6,7 +6,11 @@
   <div class="row">
     <div class="col-md-6">
       <ul class="list-group">
-
+        <li
+          *ngFor="let empleado of empleadosArrray"
+        class="list-group-item list-group-item-action">
+          {{empleado.nombre}}
+        </li>
       </ul>
       <div class="card mt-4">
         <div class="card-body">

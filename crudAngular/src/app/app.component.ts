@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {} from 'models/empleado';
+import { Empleado } from './models/empleado';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +11,5 @@ export class AppComponent {
     {id: 2, nombre: 'Cristian', pais:'Somalia'},
     {id: 3, nombre: 'Yung Lee', pais:'China'}
   ];
-
-
 
 }
