@@ -34,8 +34,10 @@ this.empleadoSeleccionado = empleado;
 
 //Funcion para eliminar
 delete(){
-  this.empleadosArray = this.empleadosArray.filter(x => x != this.empleadoSeleccionado);
-  this.empleadoSeleccionado = new Empleado();
+  if(confirm("¿Estás seguro de querer eliminarlo?")){
+    this.empleadosArray = this.empleadosArray.filter(x => x != this.empleadoSeleccionado);
+    this.empleadoSeleccionado = new Empleado();
+  }
 }
 
 }
