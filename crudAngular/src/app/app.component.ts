@@ -15,7 +15,6 @@ export class AppComponent {
 //Empleado vacio
 empleadoSeleccionado: Empleado = new Empleado();
 
-
 //Funcion para agregar y editar empleado
 addOrEdit(){
 
