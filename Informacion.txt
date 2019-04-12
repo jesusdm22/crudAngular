@@ -53,13 +53,13 @@ de trabajo y tareas del servidor sea demasiado alto.
 
 3. Abrimos línea de comandos con permisos de administrador e instalamos Angular-CLI.
 
-sudo npm install -g @angular/cli
+                                          sudo npm install -g @angular/cli
 
 
 4. Ahora nos situamos en el directorio donde queramos alojar nuestro proyecto de Angular (que en este caso está en un
 directorio que he creado dentro de la carpeta /opt) y tras ello ejecutamos el siguiente comando:
 
-ng new <Nombre del proyecto>
+                                            ng new <Nombre del proyecto>
 
 Llegados a este paso, se nos pedirá si queremos usar el routing de Angular, le diremos que NO. Cuando se nos pida qué
 CSS queremos usar, simplemente pulsamos "Enter".
@@ -67,13 +67,13 @@ CSS queremos usar, simplemente pulsamos "Enter".
 
 5. Accedemos dentro del directorio del proyecto y comprobamos la versión de Angular JS.
 
-ng version
+                                                    ng version
 
 
 6. Por último, ya solo nos queda arrancar el servicio de nuestra aplicación Angular. Al arrancarlo, Angular nos mostrará su
 página por defecto aunque puedes probar a utilizar nuestro archivo "Hola Mundo" para comprobar el correcto funcionamiento
 del proyecto.
 
-ng serve --host <Dirección IP servidor>
+                                          ng serve --host <Dirección IP servidor>
 
 -----------------------------------------------------------------------------------------------------------
