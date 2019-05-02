@@ -12,7 +12,7 @@
         class="list-group-item list-group-item-action"
         (click)="openForEdit(empleado)">
           <span class="badge badge-primary">{{empleado.id}}&nbsp;</span>
-          {{empleado.nombre}} - {{empleado.pais}}
+          {{empleado.nombre}} - {{empleado.pais}} - {{empleado.email}}
         </li>
       </ul>
 
@@ -26,6 +26,9 @@
           </div>
           <div class="form-group">
             <input type="text" [(ngModel)]="empleadoSeleccionado.pais" placeholder="Introduce tu país..." class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" [(ngModel)]="empleadoSeleccionado.email" placeholder="Introduce tu país..." class="form-control">
           </div>
           <button (click)="addOrEdit()" class="btn btn-primary">Registrar empleado</button>
           <span>&nbsp;&nbsp;</span>

@@ -7,9 +7,9 @@ import { Empleado } from './models/empleado';
 })
 export class AppComponent {
   empleadosArray: Empleado[] = [
-    {id: 1, nombre: 'Jesus', pais:'Rumania'},
-    {id: 2, nombre: 'Cristian', pais:'Somalia'},
-    {id: 3, nombre: 'Raul', pais:'República Democrática del Congo'}
+    {id: 1, nombre: 'Jesus', pais:'Rumania', email: "jesus@gmail.com"},
+    {id: 2, nombre: 'Cristian', pais:'Somalia', email: "cristian@gmail.com"},
+    {id: 3, nombre: 'Raul', pais:'República Democrática del Congo', email: "raul@gmail.com"}
   ];
 
 //Empleado vacio
